@@ -20,6 +20,9 @@ function UnleashDog(dogName, dogBreed) {
 ]
 function exerciseDog(dogName,dogBreed){
   for (let i=0; i<routine.length; i++) {
-    routine[i](dogName,dogBreed);
+let array=[]
+  let result=routine[i](dogName,dogBreed);
+  array.push(result)
   }
+  return array
 }
