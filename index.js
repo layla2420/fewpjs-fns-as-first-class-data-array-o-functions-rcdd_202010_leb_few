@@ -19,5 +19,7 @@ function UnleashDog(dogName, dogBreed) {
 },
 ]
 function exerciseDog(dogName,dogBreed){
-  console.log(routine)
+  for (let i=0; i<routine.length; i++) {
+    routine[i](dogName,dogBreed);
+  }
 }
