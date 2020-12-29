@@ -1,4 +1,4 @@
-let routine=[
+
 function wakeDog(dogName, dogBreed) {
   console.log(`Wake ${dogName} the ${dogBreed}`);
   return `Wake ${dogName} the ${dogBreed}`
@@ -23,7 +23,7 @@ function UnleashDog(dogName, dogBreed) {
   console.log(`Unleash ${dogName} the ${dogBreed}`);
     return `Unleash ${dogName} the ${dogBreed}`
 },
-]
+const routine = [wakeDog,leashDog,walkToPark,throwFrisbee,walkHome,unleashDog]
 function exerciseDog(dog, breed) {
   return routine.map(fn => fn(dog, breed))
 }
